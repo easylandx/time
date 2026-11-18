@@ -26,6 +26,9 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    /* No double-tap zoom on touch devices (pinch zoom still works) */
+    html, body, * { touch-action: manipulation; }
+
     :root {
       --rgb: 212, 245, 0;
       --fluor: rgb(var(--rgb));
